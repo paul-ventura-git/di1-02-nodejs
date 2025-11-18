@@ -1,4 +1,4 @@
-var v_fs = require('fs');
+const v_fs = require('fs');
 
 // Create a new file
 v_fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
@@ -10,7 +10,7 @@ v_fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
 // If the file does not exist, an empty file is created:
 v_fs.open('mynewfile2.txt', 'w', function (err, file) {
     if (err) throw err;
-    console.log('Saved!');
+    console.log('Guardado!');
 });
 
 // Replaces the specified file and content if it exists.
@@ -21,13 +21,14 @@ v_fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
 });
 
 // Delete files
-/*
+
 v_fs.unlink('mynewfile2.txt', function (err) {
     if (err) throw err;
     console.log('File deleted!');
 });
-*/
+
 // Rename files
+
 v_fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
     if (err) throw err;
     console.log('File Renamed!');

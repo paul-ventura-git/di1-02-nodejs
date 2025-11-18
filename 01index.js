@@ -8,10 +8,13 @@ v_http.createServer(function (req, res) {
 }).listen(8080);
 */
 
+console.log(v_http)
+
 v_http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     //res.write('Fecha y hora actual (de Javascript): ' + v_date.myDateTime());
     res.write(v_object.myJavascriptObject());
+    console.log("Este es un servidor con NodeJS 8990 abc")
     res.end();
-}).listen(8080);
+}).listen(8990);
 

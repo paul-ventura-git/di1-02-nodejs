@@ -8,8 +8,8 @@ const person = {
 // Destructuring
 let {firstName : my_firstName, lastName : my_lastName} = person;
 
-//console.log(my_firstName);
-//console.log(my_lastName);
+console.log(my_firstName);
+console.log(my_lastName);
 
 // Rest operator ("juntar")
 
